@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: #f8fafd;
 }
 
 .App-logo {
@@ -34,5 +35,55 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-items: start;
+  width: 100%;
+  max-width: 1092px;
+  position: relative;
+  margin: 40px auto;
+}
+
+.left {
+  width: 262px;
+}
+
+.center {
+  flex-grow: 1;
+}
+
+.right {
+  width: 262px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1092px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    border: 1px solid #c0d4f3;
+    border-radius: 4px;
+    padding: 32px 18px;
+    background: #fff;
+  }
+  .left {
+    order: 1;
+  }
+
+  .center {
+    order: 0;
+  }
+
+  .right {
+    order: 2;
   }
 }

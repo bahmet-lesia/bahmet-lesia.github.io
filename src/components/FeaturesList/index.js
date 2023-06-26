@@ -22,14 +22,14 @@ function FeaturesList() {
       <List>
         {featuresConfig.map(({ Icon, text, NestedComponent }) => (
           <>
-            <ListItem>
+            <ListItem sx={{paddingLeft: 0}}>
               <ListItemIcon>
                 <Icon />
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
             {NestedComponent && (
-              <ListItem>
+              <ListItem sx={{paddingLeft: 0}}>
                 <NestedComponent />
               </ListItem>
             )}
