@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 
 function Header() {
   return (
-    <AppBar sx={{ flexDirection: "row" }} color="transparent" position="fixed">
+    <AppBar sx={{ flexDirection: "row" }} color="transparent" position="relative">
       <Toolbar>
         <Typography variant="h6" color="#00C4C4">
           LOGO
