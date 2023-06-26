@@ -4,6 +4,7 @@ import { Typography, Box } from "@mui/material";
 
 import Header from "./components/Header";
 import Steps from "./components/Steps";
+import Payment from './components/Payment';
 import FeaturesList from "./components/FeaturesList";
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
         <div className="left">
           <FeaturesList />
         </div>
-        <div className="center"></div>
+        <div className="center">
+          <Payment />
+        </div>
         <div className="right">
           <Typography variant="subtitle1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
