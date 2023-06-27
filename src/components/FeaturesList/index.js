@@ -21,7 +21,7 @@ function FeaturesList() {
       </Typography>
       <List>
         {featuresConfig.map(({ Icon, text, NestedComponent }) => (
-          <>
+          <React.Fragment key={text}>
             <ListItem sx={{paddingLeft: 0}}>
               <ListItemIcon>
                 <Icon />
@@ -33,7 +33,7 @@ function FeaturesList() {
                 <NestedComponent />
               </ListItem>
             )}
-          </>
+          </React.Fragment>
         ))}
       </List>
     </>
